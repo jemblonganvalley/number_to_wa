@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -34,5 +37,61 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.form_wa {
+  /* width: auto; */
+  max-width: 500px;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.form_wa input {
+  width: 100%;
+  height: 40px;
+  padding: 0 8px;
+}
+
+.form_wa label {
+  color: #282c34;
+}
+
+.form_wa textarea {
+  width: 100%;
+  height: 150px;
+  padding: 8px;
+  font-family: inherit;
+}
+
+.form_wa button {
+  width: 100%;
+  height: 40px;
+  background-color: chartreuse;
+  color: #282c34;
+  outline: none;
+  border: none;
+  font-weight: 800;
+}
+
+@media only screen and (max-width: 500px) {
+  .form_wa {
+    width: 80%;
+    /* max-width: 500px; */
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 100px;
   }
 }
